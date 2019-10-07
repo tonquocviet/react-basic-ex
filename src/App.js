@@ -2,7 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Form from './Form';
+import Reservation from './Reservation';
 // import Child from './Child';
+import OuterClickExample from './OuterClickExample';
 function Formatted (props) {
   return (
     <h5>It is {props.date.toLocaleString()}</h5>
@@ -127,6 +129,8 @@ class App extends React.Component {
           <NumberList listCourses={this.state.courses}/>
           <button onClick={this.handelToggleClick}>{this.state.showWarning ? 'Hide' : 'Show'}</button>
           <Form/>
+          <Reservation/>
+          <OuterClickExample/>
       </header>
     </div>
     );

